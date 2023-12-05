@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 def add_tuple(tuple_a=(), tuple_b=()):
-    if len(tuple_a > 0):
+    if len(tuple_a) > 0:
         n1 = tuple_a[0]
     else:
         n1 = 0
@@ -16,5 +16,5 @@ def add_tuple(tuple_a=(), tuple_b=()):
         m2 = tuple_b[1]
     else:
         m2 = 0
-    new_tuple = (n1 + m1, n2 + b2)
+    new_tuple = (n1 + m1, n2 + m2)
     return new_tuple
