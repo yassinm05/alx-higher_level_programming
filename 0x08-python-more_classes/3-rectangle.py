@@ -50,10 +50,9 @@ class Rectangle:
     def __str__(self):
         """returns a rectangle with # in it"""
         rect = ""
-        row = '#' * self.__width
         if self.__width == 0 or self.__height == 0:
             return rect
         else:
-            for i in range(self.__height):
-                rect += row + '\n'
+            rect += "\n".join("#" * self.__width
+                              for j in range(self.__height))
             return rect
