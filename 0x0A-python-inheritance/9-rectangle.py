@@ -18,4 +18,4 @@ class Rectangle(BaseGeometry):
 
     def __str__(self):
         """a method that rreturn the discription"""
-        return "Rectangle" + str(self.__width) + "/" + str(self.__height)
+        return "[Rectangle] " + str(self.__width) + "/" + str(self.__height)
